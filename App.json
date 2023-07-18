@@ -1,0 +1,8 @@
+{
+    "env": {
+      "PORT": "5008",
+      "BYDUSERNAME": "CLXT555",
+      "BYDPASSWORD": "Inicio01",
+      "ODATAURL": "https://my343967.sapbydesign.com/sap/byd/odata/cust/v1/zcl_managemonitorfel/ZBO_MonitorFELRootCollection"
+    }
+}
