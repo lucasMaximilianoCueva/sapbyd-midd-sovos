@@ -32,8 +32,8 @@ export const PostSupplierInvoiceInMonitorFEL : RequestHandler = async (req:any, 
 
         // Ambiente de test
         if(ambiente === "test") {
-            bydUsername = usuario || "seidorfuncional"
-            bydPassword = clave || "Welcome05"
+            bydUsername = usuario || "SEIDORFUNCIONAL"
+            bydPassword = clave || "Seidor2022"
             oDataUrl = process.env.ODATAURL || "https://my356943.sapbydesign.com/sap/byd/odata/cust/v1/zcl_managemonitorfel/ZBO_MonitorFELRootCollection"
         }
 
