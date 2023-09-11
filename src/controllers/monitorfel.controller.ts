@@ -37,6 +37,12 @@ export const PostSupplierInvoiceInMonitorFEL : RequestHandler = async (req:any, 
             oDataUrl = process.env.ODATAURL || "https://my356943.sapbydesign.com/sap/byd/odata/cust/v1/zcl_managemonitorfel/ZBO_MonitorFELRootCollection"
         }
 
+        if(ambiente === "prod") {
+            bydUsername = usuario || "SEIDORFUNCIONAL"
+            bydPassword = clave || "EUW/K4HAlTCil1"
+            oDataUrl = process.env.ODATAURL || "https://my428579.businessbydesign.cloud.sap/sap/byd/odata/cust/v1/zcl_managemonitorfel/ZBO_MonitorFELRootCollection"
+        }
+
         if(!supplierInvoice)
             return res.status(404).json({"message": "Error receiving supplier invoice in body", "status": "400"})
 
